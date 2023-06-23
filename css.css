@@ -18,6 +18,12 @@ html {
     
  
   }
+  @media (min-width:768px) {
+    nav > * {
+        width:calc((100% - 4rem) / 3);
+    }
+    
+  }
  
   nav ul {
     display: flex;
@@ -203,11 +209,11 @@ html {
 
 /*skills*/
 * {box-sizing: border-box}
-.container {
+./*container {
   width: 100%;
-  background-color: #ddd;
+  background-color: ;
   
-}
+}*/
 
 .skills {
   text-align: right;
@@ -222,10 +228,10 @@ html {
 }
 
 
-.office {width: 90%; background-color: #04AA6D;}
-.html {width: 80%; background-color: #2196F3;}
-.css {width: 65%; background-color: #f44336;}
-.js {width: 60%; background-color: #808080;}
+.office {width: 90%; background-color: #04AA6D;text-align: right;padding-right: 10px;color: white;}
+.html {width: 80%; background-color: #2196F3;text-align: right;padding-right: 10px;color: white;}
+.css {width: 65%; background-color: #f44336;text-align: right;padding-right: 10px;color: white;}
+.js {width: 60%; background-color: #808080;text-align: right;padding-right: 10px;color: white;}
 
 .subskills h1 {
   font-size: 25px;
@@ -237,4 +243,65 @@ html {
   text-transform: capitalize;
   font-weight: bold;
   margin-left: 65px;
+}
+
+/*interests*/
+
+
+/*award*/
+/* container */
+.padded-boxes {
+  display:flex;
+  flex-wrap:wrap;
+  gap:2rem;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+ 
+}
+
+/* boxes */
+.padded-boxes > * {
+  width:100%;
+  background:aliceblue;
+  border-radius:.4rem;
+  border-width: 2px;
+  border-color: #ffd700;
+  border-style: outset;
+}
+
+/* headings */
+.padded-boxes .heading {
+  background:#ffd700;
+  margin:0;
+  padding:1rem;
+  border-top-left-radius:.4rem;
+  border-top-right-radius:.4rem;
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  word-spacing: 5px;
+  letter-spacing: 3px;
+  line-height: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* padded content */
+.padded-boxes .padded {
+  padding:.1rem 1rem;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: justify;
+  word-spacing: 5px;
+  letter-spacing: 3px;
+  line-height: 40px;
+  text-transform: none;
+}
+
+/* tablet breakpoint */
+@media (min-width:768px) {
+  .padded-boxes > * {
+      width:calc((100% - 4rem) / 3);
+  }
 }
